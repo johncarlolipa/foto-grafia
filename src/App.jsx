@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import DarkMode from "./DarkMode";
+import SearchForm from "./SearchForm";
+import Gallery from "./Gallery";
+import Category from "./Category";
 
 export default function App() {
   return (
-    <div className='text-center'>
-      App
-    </div>
-  )
+    <main>
+      <DarkMode />
+      <SearchForm />
+      <Category />
+      <Gallery />
+    </main>
+  );
 }
