@@ -18,7 +18,7 @@ export default function SearchForm() {
         type="text"
         name="search"
         placeholder="nature"
-        className="border border-black py-2 px-4 text-gray-500 mb-4  w-[496px]"
+        className="border border-black py-2 px-4 text-gray-500 mb-4 w-[270px]  md:w-[496px]"
       />
       <button
         type="submit"

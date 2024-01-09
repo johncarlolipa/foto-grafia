@@ -31,7 +31,7 @@ export default function Gallery() {
   const results = response.data.results;
 
   return (
-    <section className="image-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w-var(--max-width) mx-auto my-12 py-8 px-20 m-8">
+    <section className="image-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w-var(--max-width) mx-auto my-12 py-8 md:px-20 px-6 m-8">
       {results.map((item) => {
         const url = item?.urls?.regular;
         return (

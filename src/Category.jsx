@@ -39,7 +39,7 @@ export default function Category() {
 
   return (
     <section>
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-4 mx-auto mt-5 px-6 sm:px-12 md:px-12 lg:px-96">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-2 md:gap-4  mx-auto mt-5 px-6 sm:px-12 md:px-12 lg:px-96">
         {categories.map((category, index) => (
           <button
             key={index}
