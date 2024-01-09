@@ -5,6 +5,14 @@ const url = `https://api.unsplash.com/search/photos?client_id=${
   import.meta.env.VITE_API_KEY
 }`;
 
+const buttonColors = [
+  "bg-blue-300",
+  "bg-green-300",
+  "bg-yellow-300",
+  "bg-purple-300",
+  "bg-pink-300",
+];
+
 export default function Category() {
   const { searchTerm, setSearchTerm } = useGlobalContext();
   const categories = ["Nature", "Sports", "Technology", "Animals", "Science"];
@@ -36,8 +44,10 @@ export default function Category() {
           <button
             key={index}
             className={`border border-gray-300 ${
-              selectedCategory === category ? "bg-red-300" : "bg-gray-100"
-            } text-gray-700 hover:bg-red-300 focus:outline-none focus:ring focus:border-blue-300`}
+              selectedCategory === category
+                ? "bg-red-300"
+                : buttonColors[index % buttonColors.length]
+            } text-gray-700 focus:outline-none focus:ring focus:border-blue-300`}
             onClick={() => handleClick(category)}
           >
             {category}
