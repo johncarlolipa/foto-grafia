@@ -37,7 +37,7 @@ export default function Category() {
             key={index}
             className={`border border-gray-300 ${
               selectedCategory === category ? "bg-red-300" : "bg-gray-100"
-            } text-gray-700 hover:bg-red-200 focus:outline-none focus:ring focus:border-blue-300`}
+            } text-gray-700 hover:bg-red-300 focus:outline-none focus:ring focus:border-blue-300`}
             onClick={() => handleClick(category)}
           >
             {category}
