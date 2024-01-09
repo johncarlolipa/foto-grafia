@@ -57,7 +57,7 @@ export default function Category() {
 
       {searchTerm ? null : (
         <div className="col-span-full mt-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w-var(--max-width) mx-auto my-12 py-8 px-20 m-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 max-w-var(--max-width) mx-auto my-12 py-8 md:px-20 px-6 m-8">
             {photos.map((photo) => (
               <img
                 key={photo.id}
