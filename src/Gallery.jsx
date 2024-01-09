@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobalContext } from "./context";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import LoadingSpinner from "./LoadingSpinner";
 
 const url = `https://api.unsplash.com/search/photos?client_id=${
   import.meta.env.VITE_API_KEY
@@ -20,7 +21,7 @@ export default function Gallery() {
   console.log(response);
 
   if (response.isLoading) {
-    return <div>Loading...</div>;
+    return <LoadingSpinner />;
   }
 
   if (response.isError) {
