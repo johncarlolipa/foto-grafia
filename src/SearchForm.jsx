@@ -11,20 +11,23 @@ export default function SearchForm() {
     setSearchTerm(searchValue);
     setSelectedCategory(null);
   };
+
   return (
-    <form className="text-center" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="search"
-        placeholder="nature"
-        className="border border-black py-2 px-4 text-gray-500 w-[496px]"
-      />
-      <button
-        type="submit"
-        className="border border-black bg-red-500 text-white px-4 py-2"
-      >
-        Search
-      </button>
+    <form className="text-center">
+
+        <input
+          type="text"
+          name="search"
+          placeholder="nature"
+          className="border border-black py-2 px-4 text-gray-500 mb-4  w-[496px]"
+        />
+        <button
+          type="submit"
+          className="border border-black bg-red-500 text-white px-4 py-2"
+        >
+          Search
+        </button>
+
     </form>
   );
 }

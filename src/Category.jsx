@@ -15,7 +15,7 @@ const buttonColors = [
 
 export default function Category() {
   const { searchTerm, setSearchTerm } = useGlobalContext();
-  const categories = ["Nature", "Sports", "Technology", "Animals", "Science"];
+  const categories = ["Nature", "Sports", "Technology", "Animals", "Science", "Travel"];
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [photos, setPhotos] = useState([]);
 
@@ -39,7 +39,7 @@ export default function Category() {
 
   return (
     <section>
-      <div className="grid grid-cols-3 md:grid-cols-5  gap-4 mx-auto mt-5 px-96">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6  gap-4 mx-auto mt-5 px-6 sm:px-12 md:px-12 lg:px-96">
         {categories.map((category, index) => (
           <button
             key={index}
@@ -47,7 +47,7 @@ export default function Category() {
               selectedCategory === category
                 ? "bg-red-300"
                 : buttonColors[index % buttonColors.length]
-            } text-gray-700 focus:outline-none focus:ring focus:border-blue-300`}
+            } text-gray-700 focus:outline-none focus:ring focus:border-blue-300 mb-2 sm:mb-0`}
             onClick={() => handleClick(category)}
           >
             {category}
