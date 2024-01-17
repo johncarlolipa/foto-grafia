@@ -51,4 +51,4 @@ To run the Image Search App locally, follow these steps:
 6. Open your browser and visit [http://localhost:3000](http://localhost:3000) to use the Image Search App.
 
 
-Enjoy exploring and discovering stunning images with the Image Search App! 📷✨
+Enjoy exploring and discovering stunning images with the Fotografia! 📷✨
